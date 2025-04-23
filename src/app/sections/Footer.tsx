@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 
 function Footer() {
   return (
@@ -46,20 +46,19 @@ function Footer() {
           </div>
         </div>
 
-        {/* Contact Info or Newsletter */}
+        {/* Contact Info */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Stay in the Loop</h3>
-          <p className="text-sm text-gray-400 mb-2">Subscribe to our newsletter to get updates and news.</p>
-          <form className="flex ">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full px-3 py-2 text-white rounded-l-md focus:outline-none border border-blue-600"
-            />
-            <button className="bg-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-700">
-              Subscribe
-            </button>
-          </form>
+          <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
+          <div className="text-sm text-gray-400 space-y-2">
+            <div className="flex items-center gap-2">
+              <FaEnvelope className="text-blue-500" />
+              <span>abhiwebdev2.0@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <FaPhoneAlt className="text-green-500" />
+              <span>+91 76681 96232</span>
+            </div>
+          </div>
         </div>
       </div>
 
